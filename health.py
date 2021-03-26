@@ -1,6 +1,6 @@
 import json
 from enum import Enum
-from collections import namedtuple
+from typing import NamedTuple
 
 
 class HealthStatus(Enum):
@@ -8,6 +8,6 @@ class HealthStatus(Enum):
     YELLOW = 200
     RED = 300
 
-class Health(namedtuple):
+class Health(NamedTuple):
     status : HealthStatus
     description : str
